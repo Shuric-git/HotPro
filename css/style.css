@@ -1,0 +1,493 @@
+@font-face {
+	font-family: 'MullerBold';
+	src: url('fonts/MullerBold.woff2') format('woff2'),
+		url('fonts/MullerBold.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MullerLight';
+	src: url('fonts/MullerLight.woff2') format('woff2'),
+		url('fonts/MullerLight.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MullerMedium';
+	src: url('fonts/MullerMedium.woff2') format('woff2'),
+		url('fonts/MullerMedium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MullerRegular';
+	src: url('fonts/MullerRegular.woff2') format('woff2'),
+		url('fonts/MullerRegular.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'fontawesome-webfont';
+	src: url('fonts/fontawesome-webfont.woff2') format('woff2'),
+		url('fonts/fontawesome-webfont.woff') format('woff');
+	font-display: swap;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+body {
+	font-family: MullerMedium;
+	background-color: #f1f1f1;
+}
+
+a {
+	text-decoration: none;
+}
+
+.h2__title {
+	font-family: MullerLight;
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 30px;
+    margin-left: 45px;
+}
+
+input::-webkit-input-placeholder { color: #bebebe; }
+input:-moz-placeholder { color: #bebebe; }
+
+							/*HEADER__SEXTION*/
+
+.header {
+	margin: 33px 0 70px 0;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	margin-bottom: 78px;
+}
+
+.header-top {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.logo {
+	margin-right:25px;
+}
+
+.fa-arrow-circle-right {
+	color: #cc9933;
+}
+
+.tel {
+	margin-top: auto;
+    margin-bottom: auto;
+    font-family: MullerBold;
+    font-size: 22px;
+    color: #666666;
+}
+
+.account {
+	margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    color: #cc9933;
+}
+
+.header-bottom {
+    display: flex;
+    padding: 11px 21px;
+    height: 70px;
+    background-color: #ffffff;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.nav-list {
+	display: flex;
+} 
+
+.header-nav {
+	margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-item {
+	margin-right: 45px;
+	font-size: 16px;
+}
+
+.nav-link {
+	color: #333333;
+}
+
+.header-search {
+	margin-left: auto;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+    background-color: #f1f1f1;
+    min-width: 355px;
+    padding: 0 20px;
+    font-family: mullerregular;
+	font-size: 14px;
+	background-image: url(../img/search.svg);
+}
+
+							/*HEADER__SEXTION*/
+
+					/*QUICK_RESERVE_SPEC_OFFER__SEXTION*/	
+
+.quick_reserv__zone {
+	display: flex;
+}
+
+.quick_res__title, .spec_offer__title{
+	margin-left: 45px;
+}					
+
+.quick_form {
+	display: flex;
+	flex-direction: column;
+}
+
+.input, .quick_reserv__input {
+	width: 518px;
+	height: 70px;
+	font-family: mullerregular;
+	font-size: 16px;
+	font-weight: 100;
+	padding: 11px 21px;
+    background-color: #ffffff;
+    border: 1px solid white;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.button {
+	width: 159px;
+	height: 70px;
+	background-color: #cc9933;
+	border-radius: 12px;
+	border: 0px solid #ffffff;
+	padding: 29px;
+	font-family: mullerbold;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 100;
+}
+
+.quick_res_bottom {
+	display: flex;
+	align-items: center;
+}
+
+.available {
+	margin-left: 30px;
+	color: #ababab;
+}
+
+.reserv-number {
+	font-family: mullerlight;
+	color: #cc9933;
+	margin-right: 5px;
+}
+
+.spec-offer__title {
+	margin-left: 90px;
+}
+
+.spec-offer__bcg {
+	width: 595px;
+	height: 540px;
+	margin-left: 55px;
+	background-image: url(../img/lux_bcg.jpg);
+	padding: 267px 230px 29px 44px;
+}
+
+.spec-offer-sub__title {
+	font-family: mullerbold;
+	font-size: 66px;
+	line-height: 58px;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+
+.spec-offer__price {
+	font-family: mullerlight;
+	font-size: 35px;
+	line-height: 32px;
+	color: #ffffff;
+	opacity: 0.5;
+}
+
+.spec-offer-more-info__btn {
+	font-family: myriadregular;
+	font-size: 16px;
+	color: #ffcc66;
+	margin-left: 30px;
+	font-weight: 100;
+}
+
+					/*QUICK_RESERVE_SPEC_OFFER__SEXTION*/	
+
+					/*ABOUT__SEXTION*/	
+
+.about__title {
+	line-height: 32px;
+	margin-bottom: 13px;
+}							
+
+.about__info {
+	font-family: mullerregular;
+	font-size: 16px;
+	line-height: 32px;
+	color: #666666;
+	font-weight: 400;
+	width: 894px;
+	margin-left: 45px;
+}
+
+    				/*ABOUT__SEXTION*/	
+
+					/*SERVICES__SEXTION*/															
+
+.services-list-item {
+	width: 573px;
+	height: 325px;
+	background-color: #fff;
+	border: 0px solid #fff;
+	border-radius: 12px;
+	display: inline-block;
+	margin-bottom: 24px;
+}
+
+.services-list-item:nth-child(2n) {
+	margin-left: 20px;
+   } 
+
+.services-more-info {
+	font-family: myriadpro;
+	font-size: 22px;
+	line-height: 32px;
+	color: #cc9933;
+}
+
+.services__info {
+	font-family: myriadpro;
+	font-size: 16px;
+	line-height: 32px;
+	color: #333333;
+}
+
+.services-card_bottom {
+	padding: 25px;
+}
+
+					/*SERVICES__SEXTION*/	
+
+					/*ADVANTAGES__SEXTION*/
+
+.advantages__list-item {
+	width: 275px;
+	min-height: 275px;
+	background-color: #fff;
+	border: 0px solid #fff;
+	border-radius: 12px;
+	display: inline-block;
+	margin-bottom: 24px;
+	padding: 44px;
+	margin-right: 19px;
+
+}		
+
+.advantages__list-item:nth-child(4n) {
+	margin-right: 0px;
+   } 			
+
+.advantages-img {
+    width: 63px;
+    height: 59px;
+    background-image: url(../img/bathtub.svg);
+}
+
+.advantages-info {
+	font-family: myriadpro;
+	font-size: 16px;
+	line-height: 32px;
+	width: 181px;
+	color: #333333;
+}
+
+					/*ADVANTAGES__SEXTION*/	
+
+					/*LOCATION__SEXTION*/
+
+.location__list-item {
+	width: 373px;
+	height: 441px;
+	vertical-align: top;
+	background-color: #fff;
+	border: 0px solid #fff;
+	border-radius: 12px;
+	display: inline-block;
+	margin-bottom: 24px;
+	margin-right: 21px;
+}
+
+.location__list-item:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.location__list__bottom {
+	padding: 45px;
+	padding-top: 30px;
+}
+
+.all-offers-bcg {
+	background-image: url(../img/location__img-ninth.png);
+	width: 373px;
+	height: 441px;
+	display: inline-block;
+}
+
+.grey-text {
+	font-family: MullerRegular;
+	font-size: 16px;
+	line-height: 32px;
+	color: #969696;
+}
+
+.location-price {
+	font-family: MullerBold;
+	font-size: 22px;
+	line-height: 32px;
+	color: #333333;
+}
+
+.location-text {
+	font-family: MullerRegular;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.rooms__button {
+	display: flex;
+	width: 100px;
+	height: 41px;
+	margin-top: 10px;
+	background-color: #ffffff;
+	border-radius: 12px;
+	border: 1px solid #cc9933;
+	padding-top: 12px;
+    padding-left: 19px;
+	font-family: MullerBold;
+	font-size: 16px;
+/*	line-height: 32px;*/
+	color: #cc9933;
+	font-weight: 100;
+}
+
+					/*LOCATION__SEXTION*/
+
+					/*CONTACTS__SEXTION*/
+
+.contacts__wrapper {
+	display: flex;
+}
+
+.contacts-block {
+	background-color: #ffffff;
+	border: solid 0px #ffffff;
+	border-radius: 12px;
+	width: 472px;
+	min-height: 620px;
+	padding: 45px;
+}
+
+.sub-block__title {
+	font-family: MullerBold;
+	font-size: 22px;
+	line-height: 21px;
+}
+
+.sub-block__info {
+	font-family: MullerRegular;
+	font-size: 16px;
+	line-height: 24px;
+	width: 230px;
+}
+
+.contacts__right {
+	width: 340px;
+	margin-left: 178px;
+}
+
+.mail-us__input {
+	width: 340px;
+}
+
+.contacts__button {
+	width: 214px;
+	height: 70px;
+	font-family: mullerbold;
+	font-size: 16px;
+	padding: 28px;
+	margin-top: 45px;
+}
+
+.contacts-block__sub-block {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #cccccc;
+}
+
+.contacts-gray {
+	color: #999999;
+}
+
+.contacts-yellow {
+	color: #cc9933;
+}
+
+					/*CONTACTS__SEXTION*/
+
+					/*FOOTER__SEXTION*/
+
+.footer__wrapper {
+	width: 1168px;
+	height: 338px;
+	background-color: #333333;
+	border-radius: 12px;
+	padding: 50px;
+}
+
+					/*FOOTER__SEXTION*/
+
+
+
+
+
+
+
+
+
+
+
+					
