@@ -441,13 +441,19 @@ input:-moz-placeholder { color: #bebebe; }
 	width: 340px;
 }
 
+.messages__input {
+	width: 340px;
+	height: 110px;
+	margin-bottom: 25px;
+	color: #999999;
+}
+
 .contacts__button {
-	width: 214px;
+	width: 343px;
 	height: 70px;
 	font-family: mullerbold;
 	font-size: 16px;
 	padding: 28px;
-	margin-top: 45px;
 }
 
 .contacts-block__sub-block {
@@ -478,6 +484,13 @@ input:-moz-placeholder { color: #bebebe; }
 	padding: 50px;
 }
 
+.footer__white-text {
+	color: #ffffff;
+}
+
+.footer__yellow-text {
+	color: #cc9933;
+}
 					/*FOOTER__SEXTION*/
 
 
