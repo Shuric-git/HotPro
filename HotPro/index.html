@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.min.css">            
   <title>HotelsProject</title>
@@ -10,35 +11,29 @@
 <body>
   <header class="header">
     <section class="container">
-      <div class="header-top">
-        <img class="logo" src="img/Logo.png">
-        <tel class="tel">+7 495 322 54 48</tel>
-        <a class="account"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Личный кабинет</a>
+      <div class="row header-top">
+        <div class="col-lg-3">
+          <img class="logo" src="img/Logo.png">
+        </div>
+        <div class="col-lg-3">
+          <tel class="tel">+7 495 322 54 48</tel>
+        </div>
+        <div class="col-lg-6 account__col">
+          <a class="account"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Личный кабинет</a>
+        </div>
       </div>
-      <div class="header-bottom">
-        <nav class="header-nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="" class="nav-link">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Услуги</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Преимущества</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Размещение</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Блог</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Контакты</a>
-            </li>
-          </ul>
+      <div class="row header-bottom">
+        <nav class="col-lg-8 header-nav">
+          <a href="" class="nav-link">О нас</a>
+          <a href="" class="nav-link">Услуги</a>
+          <a href="" class="nav-link">Преимущества</a>
+          <a href="" class="nav-link">Размещение</a>
+          <a href="" class="nav-link">Блог</a>
+          <a href="" class="nav-link">Контакты</a>
         </nav>
-        <input type="text" class="header-search" placeholder="Поиск">
+        <div class="col-lg-4">
+          <input type="text" class="header-search" placeholder="Поиск">
+        </div>
       </div>
     </section>
   </header>
@@ -47,8 +42,8 @@
 
   <main class="main">
     <section class="container">
-      <div class="quick_reserv__zone">
-        <div class="quick_form">
+      <div class="row quick_reserv__zone">
+        <div class="col-lg-6 quick_form">
           <h2 class="h2__title quick_res__title">Быстрая бронь</h2>
           <form action="http://jsonplaceholder.typicode.com/posts" autocomplete method="post" class="form quick_res__form">
             <input type="text" name="Город" class="quick_reserv__input" placeholder="Город">
@@ -64,7 +59,7 @@
             </div>
         </form>
         </div>
-        <div class="spec-offer__zone">
+        <div class="col-lg-6 spec-offer__zone">
           <h2 class="h2__title spec-offer__title">Спецпредложение</h2>
           <div class="spec-offer__bcg">
               <h3 class="spec-offer-sub__title">Номера категории люкс</h3>
@@ -74,7 +69,7 @@
         </div>
     </section>
 
-    <!-- Reserve and Special offfer section -->
+    <!-- Reserve and Special offer section -->
 
     <!-- About section -->
       
@@ -89,35 +84,46 @@
 
     <section class="container">
       <h2 class="h2__title services__title">Услуги</h2>
-      <ul class="services__list">
-        <li class="services-list-item">
+      <ul class="row services__list">
+        <div class="col-lg-6">
+          <li class="services-list-item">
           <img class="services__img" src="img/exclusive_service.png"> </img>
           <div class="services-card_bottom">
               <a href="" class="services-more-info">Эксклюзивное обслуживание</a>
               <p class="services__info">Равным образом постоянный количественный рост и сфера нашей активности</p>
           </div>
         </li>
-        <li class="services-list-item">
+        </div>
+        
+        <div class="col-lg-6">
+          <li class="services-list-item">
           <img class="services__img" src="img/hall_rent.png"> </img>
           <div class="services-card_bottom">
             <a href="" class="services-more-info">Аренда банкетных залов</a>
             <p class="services__info">Значимость этих проблем настолько   очевидна, что дальнейшее развитие различных форм.</p>
           </div>
         </li>
-        <li class="services-list-item">
+        </div>
+        
+        <div class="col-lg-6">
+          <li class="services-list-item">
           <img class="services__img" src="img/many_things.png"> </img>
           <div class="services-card_bottom">
               <a href="" class="services-more-info">Сауны, бассейны, бани, фитнесс-заллы</a>
               <p class="services__info">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
             </div>
         </li>
-        <li class="services-list-item">
+        </div>
+        
+        <div class="col-lg-6">
+          <li class="services-list-item">
           <img class="services__img" src="img/secure_parking.png"> </img>
           <div class="services-card_bottom">
               <a href="" class="services-more-info">охраняемые автомобильные стоянки</a>
               <p class="services__info">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
             </div>
         </li>
+        </div>
       </ul>
     </section>
 
@@ -127,39 +133,63 @@
 
     <section class="container">
       <h2 class="h2__title">Преимущества</h2>
-      <ul class="advantages__list">
-        <li class="advantages__list-item">
+      <ul class="row advantages__list">
+        <div class="col-lg-3">
+          <li class="advantages__list-item">
           <img src="img/bathtub.png" alt="" class="advantages-img">
           <p class="advantages-info">Идейные соображения высшего порядка, а также постоянный количественный рост</p>
-        </li>
-        <li class="advantages__list-item">
+          </li>
+        </div>
+        
+        <div class="col-lg-3">
+          <li class="advantages__list-item">
           <img src="img/hanger.png" alt="" class="advantages-img">
           <p class="advantages-info">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
-        </li>
-        <li class="advantages__list-item">
+          </li>
+        </div>
+        
+        <div class="col-lg-3">
+          <li class="advantages__list-item">
           <img src="img/heating.png" alt="" class="advantages-img">
           <p class="advantages-info">Таким образом реализация плановых заданий играет важную роль для понимания</p>
-        </li>
-        <li class="advantages__list-item">
+          </li>
+        </div>
+        
+        <div class="col-lg-3">
+          <li class="advantages__list-item">
           <img src="img/hotel-key.png" alt="" class="advantages-img">
           <p class="advantages-info">Повседневная практика показывает, что сложившаяся структура организации</p>
-        </li>
-        <li class="advantages__list-item">
+          </li>
+        </div>
+        
+        <div class="col-lg-3">
+          <li class="advantages__list-item">
           <img src="img/parking.png" alt="" class="advantages-img">
           <p class="advantages-info">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
-        </li>
-        <li class="advantages__list-item">
+          </li>
+        </div>
+        
+        <div class="col-lg-3">
+          <li class="advantages__list-item">
           <img src="img/reception.png" alt="" class="advantages-img">
           <p class="advantages-info">Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса </p>
-        </li>
-        <li class="advantages__list-item">
+          </li>
+        </div>
+        
+        <div class="col-lg-3">
+          <li class="advantages__list-item">
           <img src="img/security-box.png" alt="" class="advantages-img">
           <p class="advantages-info">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
-        </li>
-        <li class="advantages__list-item">
+          </li>
+        </div>
+        
+        <div class="col-lg-3">
+          <li class="advantages__list-item">
           <img src="img/swimming-pool.png" alt="" class="advantages-img">
           <p class="advantages-info">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
-        </li>
+          </li>
+        </div>
+        
       </ul>
     </section>
 

@@ -76,17 +76,19 @@ input:-moz-placeholder { color: #bebebe; }
 }
 
 .container {
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 	margin-bottom: 78px;
 }
 
 .header-top {
-	display: flex;
 	margin-bottom: 30px;
+	align-items: center;
 }
 
 .logo {
+	width: 261px;
+	height: 54px;
 	margin-right:25px;
 }
 
@@ -102,29 +104,29 @@ input:-moz-placeholder { color: #bebebe; }
     color: #666666;
 }
 
+.account__col {
+	text-align: end;
+}
+
 .account {
-	margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
     color: #cc9933;
 }
 
 .header-bottom {
-    display: flex;
+	display: flex;
+	align-items: center;
     padding: 11px 21px;
+	margin-left: 0;
+	margin-right: 0;
     height: 70px;
     background-color: #ffffff;
     border: 1px solid white;
     border-radius: 12px;
 }
 
-.nav-list {
-	display: flex;
-} 
-
 .header-nav {
-	margin-top: auto;
-    margin-bottom: auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 .nav-item {
@@ -141,6 +143,7 @@ input:-moz-placeholder { color: #bebebe; }
     border-radius: 15px;
     border: 1px solid #ffffff;
     background-color: #f1f1f1;
+	height: 47px;
     min-width: 355px;
     padding: 0 20px;
     font-family: mullerregular;
@@ -161,8 +164,7 @@ input:-moz-placeholder { color: #bebebe; }
 }					
 
 .quick_form {
-	display: flex;
-	flex-direction: column;
+	width: 47%;
 }
 
 .input, .quick_reserv__input {
@@ -208,13 +210,11 @@ input:-moz-placeholder { color: #bebebe; }
 }
 
 .spec-offer__title {
-	margin-left: 90px;
 }
 
 .spec-offer__bcg {
 	width: 595px;
 	height: 540px;
-	margin-left: 55px;
 	background-image: url(../img/lux_bcg.jpg);
 	padding: 267px 230px 29px 44px;
 }
@@ -236,7 +236,6 @@ input:-moz-placeholder { color: #bebebe; }
 }
 
 .spec-offer-more-info__btn {
-	font-family: myriadregular;
 	font-size: 16px;
 	color: #ffcc66;
 	margin-left: 30px;
@@ -311,7 +310,6 @@ input:-moz-placeholder { color: #bebebe; }
 	display: inline-block;
 	margin-bottom: 24px;
 	padding: 44px;
-	margin-right: 19px;
 
 }		
 
